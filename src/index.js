@@ -156,7 +156,10 @@ function reiniciarJuego() {
     );
   });
   puntaje = 0;
+  document.querySelector("#puntaje strong").textContent = String(puntaje);
   turno = 0;
+  document.querySelector("#turno strong").textContent = String(turno);
+
   clearInterval(timer);
   iniciarContador();
   ocultarMensajeGanador();
